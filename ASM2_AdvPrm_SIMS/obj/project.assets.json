@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\supbr\\.nuget\\packages\\": {},
-    "D:\\vsshared\\NuGetPackages": {}
+    "C:\\Users\\finng\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\supbr\\Source\\Repos\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj",
+      "projectUniqueName": "C:\\Users\\finng\\Source\\Repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj",
       "projectName": "ASM2_AdvPrm_SIMS",
-      "projectPath": "C:\\Users\\supbr\\Source\\Repos\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj",
-      "packagesPath": "C:\\Users\\supbr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\supbr\\Source\\Repos\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\obj\\",
+      "projectPath": "C:\\Users\\finng\\Source\\Repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj",
+      "packagesPath": "C:\\Users\\finng\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\finng\\Source\\Repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\vsshared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\supbr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\finng\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -34,6 +34,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -62,15 +63,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
