@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\supbr\\Source\\Repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj": {}
+    "C:\\Users\\supbr\\source\\repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\supbr\\Source\\Repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj": {
+    "C:\\Users\\supbr\\source\\repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\supbr\\Source\\Repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj",
+        "projectUniqueName": "C:\\Users\\supbr\\source\\repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj",
         "projectName": "ASM2_AdvPrm_SIMS",
-        "projectPath": "C:\\Users\\supbr\\Source\\Repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj",
+        "projectPath": "C:\\Users\\supbr\\source\\repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\ASM2_AdvPrm_SIMS.csproj",
         "packagesPath": "C:\\Users\\supbr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\supbr\\Source\\Repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\obj\\",
+        "outputPath": "C:\\Users\\supbr\\source\\repos\\FnGitHub9\\ASM2_AdvPrm-SIMS\\ASM2_AdvPrm_SIMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\vsshared\\NuGetPackages"
