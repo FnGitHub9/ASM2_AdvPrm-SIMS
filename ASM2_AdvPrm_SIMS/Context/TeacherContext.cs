@@ -12,9 +12,9 @@ namespace ASM2_AdvPrm_SIMS.Context
         public List<Teacher> Teachers { get; set; }
         private readonly string filePath;
 
-        public TeacherContext()
+        public TeacherContext(string filePath)
         {
-            this.filePath = @"C:\Users\supbr\source\repos\FnGitHub9\ASM2_AdvPrm-SIMS\ASM2_AdvPrm_SIMS\CSV-FIles\Teacher.csv";
+            this.filePath = filePath;
             Teachers = ReadDataFromCsvAndUpdateId(filePath);
         }
 
@@ -27,7 +27,7 @@ namespace ASM2_AdvPrm_SIMS.Context
 
         public void UpdateTeacher(int teacherID, Teacher updateTeacher)
         {
-            Teacher existingTeacher = Teachers.FirstOrDefault(s => s.Id == teacherID);
+            Teacher existingTeacher = Teachers.FirstOrDefault(t => t.Id == teacherID);
 
             if (existingTeacher != null)
             {
