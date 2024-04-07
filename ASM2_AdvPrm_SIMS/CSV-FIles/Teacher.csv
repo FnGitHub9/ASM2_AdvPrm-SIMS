@@ -1,13 +1,13 @@
-SIS ID,School SIS ID,First Name,Last Name,Username,Password,State ID,Teacher Number,Status,Middle Name,Secondary Email,Title,Qualification
-14001,10001,Craig,Beane,CBeane,P@ssw0rd,WA,101,Active,James,,,
-14002,10001,Daisy,Todd,DTodd,P@ssw0rd,WA,102,Active,Francis,,,
-14003,10001,Dana,Mills,DMills,P@ssw0rd,WA,103,Active,Lynn,,,
-14004,10001,Rocky,Jaime,RJaime,P@ssw0rd,WA,104,Active,Brandon,,,
-14005,10001,Dolly,Wyatt,DWyatt,P@ssw0rd,WA,105,Active,Robert,,,
-14006,10001,Kristie,Mitchell,KMitchell,P@ssw0rd,WA,106,Active,Timothy,,,
-14007,10001,Felicia,Flowers,FFlowers,P@ssword,WA,107,Active,Lynn,,,
-14008,10002,Hope,Todd,HTodd,P@ssword,WA,108,Active,Christopher,,,
-14009,10002,Edna,Doyle,EDoyle,P@ssword,WA,109,Active,Bradley,,,
-14010,10002,Shawna,Roy,SRoy,P@ssword,WA,110,Active,Brandon,,,
-14011,10002,Tammie,Benton,TBenton,P@ssword,WA,111,Active,Robert,,,
-14012,10002,Susana,Rocha,SRocha,P@ssword,WA,112,Active,Lynn,,,
+SIS ID,Id,School SIS ID,FirstName,LastName,Subject,Status,Middle Name
+14001,101,10001,Craig,Beane,Math,Active,James
+14002,102,10001,Daisy,Todd,Digital Art,Active,Francis
+14003,103,10001,Dana,Mills,Computing,Active,Lynn
+14004,104,10001,Rocky,Jaime,Artificial Intelligent Engineer,Active,Brandon
+14005,105,10001,Dolly,Wyatt,English,Active,Robert
+14006,106,10001,Kristie,Mitchell,Computing,Active,Timothy
+14007,107,10001,Felicia,Flowers,Digital Art,Active,Lynn
+14008,108,10002,Hope,Todd,Art,Active,Christopher
+14009,109,10002,Edna,Doyle,Marketing,Active,Bradley
+14010,110,10002,Shawna,Roy,Business Intelligent,Active,Brandon
+14011,111,10002,Tammie,Benton,English,Active,Robert
+14012,112,10002,Susana,Rocha,Art,Active,Lynn
