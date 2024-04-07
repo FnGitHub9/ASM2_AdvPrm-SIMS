@@ -33,8 +33,83 @@ namespace ASM2_AdvPrm_SIMS.Context
             {
                 existingStudent.firstName = updateStudent.firstName;
                 existingStudent.lastName = updateStudent.lastName;
-                
+                existingStudent.StudentNo = updateStudent.StudentNo;
+                existingStudent.Status = updateStudent.Status;
+                existingStudent.Birthdate = updateStudent.Birthdate;
+
+                WriteDataToCsv(filePath);
+            }
+            else
+            {
+                Console.WriteLine($"Student with ID {studentID} not found.");
             }
         }
+
+        public void DeleteStudent(int studentID)
+        {
+            Student studentToRemove = Students.FirstOrDefault( s => s.Id == studentID);
+            
+            if (studentToRemove != null)
+            {
+                Students.Remove(studentToRemove);
+                WriteDataToCsv(filePath);
+            }
+            else
+            {
+                Console.WriteLine($"Student with ID {studentID} not found.");
+            }
+        }
+        public List<Student> ReadDataFromCsvAndUpdateId(string filePath)
+        {
+            Students = new List<Student>();
+            nextStudentId = 1;
+
+            if (File.Exists(filePath))
+            {
+                using (StreamReader reader = new StreamReader(filePath))
+                {
+                    // Skip the header line
+                    reader.ReadLine();
+
+                    while (!reader.EndOfStream)
+                    {
+                        string line = reader.ReadLine();
+                        string[] values = line.Split(',');
+
+                        if (values.Length >= 7)
+                        {
+                            Student student = new Student();
+                            {
+                                student.Id = int.Parse(values[0]);
+                                student.firstName = values[1];
+                                student.lastName = values[2];
+                                student.StudentNo = int.Parse(values[3]);
+                                student.Status = bool.Parse(values[4]);
+                                student.Birthdate = DateTime.Parse(values[5]);
+                            };
+                            Students.Add(student);
+                            if (student.Id >= nextStudentId)
+                            {
+                                nextStudentId = student.Id + 1;
+                            }
+                        }
+                    }
+                }
+            }
+            return Students;
+        }
+        private void WriteDataToCsv(string filePath)
+        {
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                writer.WriteLine("Id,firstName,lastName,Password,StudentNo,Status,Birthdate");
+
+                foreach (var student in Students)
+                {
+                    writer.WriteLine($"{student.Id}, {student.firstName}, {student.lastName}, {student.StudentNo},{student.Status},{student.Birthdate}");
+                }
+            }
+        }
+
     }
 }
