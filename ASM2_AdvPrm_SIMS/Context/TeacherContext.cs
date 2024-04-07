@@ -63,7 +63,7 @@ namespace ASM2_AdvPrm_SIMS.Context
                             string FirstName = parts[1];
                             string LastName = parts[2];
                             string Subject = parts[3];
-                            int Status = int.Parse(parts[4]);
+                            bool Status = bool.Parse(parts[4]);
 
                             teachers.Add(new Teacher
                             {
