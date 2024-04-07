@@ -91,7 +91,19 @@ namespace ASM2_AdvPrm_SIMS.Context
 
             return teachers;
         }
-
+        public void DeleteTeacher(int teacherID)
+        {
+            Teacher teacherToRemove = Teachers.FirstOrDefault(t => t.Id == teacherID);
+            if (teacherToRemove != null)
+            {
+                Teachers.Remove(teacherToRemove);
+                WriteDataToCsv(filePath);
+            }
+            else
+            {
+                Console.WriteLine($"Teacher with ID {teacherID} not found.");
+            }
+        }
 
         private void WriteDataToCsv(string filePath)
         {
