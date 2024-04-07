@@ -33,7 +33,7 @@ namespace ASM2_AdvPrm_SIMS.Context
             {
                 existingStudent.firstName = updateStudent.firstName;
                 existingStudent.lastName = updateStudent.lastName;
-                //continue from here 
+                
             }
         }
     }
