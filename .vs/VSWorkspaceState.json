@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ASM2_AdvPrm_SIMS"
   ],
-  "SelectedNode": "\\ASM2_AdvPrm_SIMS.sln",
+  "SelectedNode": "\\ASM2_AdvPrm_SIMS\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
