@@ -1,13 +1,13 @@
-SIS ID,Id,School SIS ID,FirstName,LastName,Subject,Status,Middle Name
-14001,101,10001,Craig,Beane,Math,Active,James
-14002,102,10001,Daisy,Todd,Digital Art,Active,Francis
-14003,103,10001,Dana,Mills,Computing,Active,Lynn
-14004,104,10001,Rocky,Jaime,Artificial Intelligent Engineer,Active,Brandon
-14005,105,10001,Dolly,Wyatt,English,Active,Robert
-14006,106,10001,Kristie,Mitchell,Computing,Active,Timothy
-14007,107,10001,Felicia,Flowers,Digital Art,Active,Lynn
-14008,108,10002,Hope,Todd,Art,Active,Christopher
-14009,109,10002,Edna,Doyle,Marketing,Active,Bradley
-14010,110,10002,Shawna,Roy,Business Intelligent,Active,Brandon
-14011,111,10002,Tammie,Benton,English,Active,Robert
-14012,112,10002,Susana,Rocha,Art,Active,Lynn
+Id,FirstName,LastName,Subject,Status
+101,Craig,Beane,Math,Active
+102,Daisy,Todd,Digital Art,Active
+103,Dana,Mills,Computing,Active
+104,Rocky,Jaime,Artificial Intelligent Engineer,Active
+105,Dolly,Wyatt,English,Active
+106,Kristie,Mitchell,Computing,Active
+107,Felicia,Flowers,Digital Art,Active
+108,Hope,Todd,Art,Active
+109,Edna,Doyle,Marketing,Active
+110,Shawna,Roy,Business Intelligent,Active
+111,Tammie,Benton,English,Active
+112,Susana,Rocha,Art,Active
