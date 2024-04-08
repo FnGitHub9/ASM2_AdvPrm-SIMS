@@ -112,7 +112,7 @@ namespace ASM2_AdvPrm_SIMS.Context
                 using (StreamReader sr = new StreamReader(filePath))
                 {
                     sr.ReadLine();
-                    while (!sr.EndOfStream)
+                    while (!sr.EndOfStream) 
                     {
                         sr.ReadLine() ;
                         teachersCount++;
