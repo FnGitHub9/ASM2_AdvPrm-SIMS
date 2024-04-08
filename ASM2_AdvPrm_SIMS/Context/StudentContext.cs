@@ -44,7 +44,6 @@ namespace ASM2_AdvPrm_SIMS.Context
                 Console.WriteLine($"Student with ID {studentID} not found.");
             }
         }
-
         public void DeleteStudent(int studentID)
         {
             Student studentToRemove = Students.FirstOrDefault( s => s.Id == studentID);
@@ -58,6 +57,28 @@ namespace ASM2_AdvPrm_SIMS.Context
             {
                 Console.WriteLine($"Student with ID {studentID} not found.");
             }
+        }
+        public int CountStudentsInCsv()
+        {
+            int studentCount = 0;
+            if (File.Exists(filePath))
+            {
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    sr.ReadLine();
+                    while (!sr.EndOfStream)
+                    {
+                        sr.ReadLine() ;
+                        studentCount++;
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Unable to read csv");
+            }
+
+            return studentCount;
         }
         public List<Student> ReadDataFromCsvAndUpdateId(string filePath)
         {
