@@ -1,7 +1,31 @@
+using ASM2_AdvPrm_SIMS.Context;
+using ASM2_AdvPrm_SIMS.Service;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddScoped<StudentService>();
+
+builder.Services.AddScoped<StudentContext>(provider =>
+{
+    string filePath = "CSV-Files/Student.csv";
+
+    return new StudentContext(filePath);
+}
+);
+builder.Services.AddScoped<TeacherService>();
+
+builder.Services.AddScoped<TeacherContext>(provider =>
+{
+    string filePath = "CSV-Files/Teacher.csv";
+
+    return new TeacherContext(filePath);
+}
+);
 
 var app = builder.Build();
 
