@@ -1,1 +1,8 @@
-ID,SubjectCode,Subject,Status1,SE06101,Computing,Active2,SE06102,Digital Art,Active3,SE06103,Art,Active4,SE06104,Math,Active5,SE06105,English,Active6,SE06106,Artificial Intelligent Engineer,Active7,SE06107,Business Intelligent,Active
+ID,SubjectCode,Subject,Status
+1,SE06101,Computing,Active
+2,SE06102,Digital Art,Active
+3,SE06103,Art,Active
+4,SE06104,Math,Active
+5,SE06105,English,Active
+6,SE06106,Artificial Intelligent Engineer,Active
+7,SE06107,Business Intelligent,Active

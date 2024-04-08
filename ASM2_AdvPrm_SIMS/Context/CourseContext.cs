@@ -14,7 +14,7 @@ namespace ASM2_AdvPrm_SIMS.Context
 
         public CourseContext()
         {
-            this.filePath = @"C:\Users\supbr\source\repos\FnGitHub9\ASM2_AdvPrm-SIMS\ASM2_AdvPrm_SIMS\CSV-FIles\Course.csv";
+            this.filePath = filePath;
             Courses = ReadDataFromCsvAndUpdateId(filePath);
         }
 
