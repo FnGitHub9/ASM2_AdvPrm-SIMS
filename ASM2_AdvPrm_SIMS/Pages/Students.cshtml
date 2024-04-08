@@ -1,0 +1,158 @@
+﻿@page
+@model ASM2_AdvPrm_SIMS.Pages.StudentsModel
+@{
+}
+<style>
+    .main {
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px 0 0; /* Height of navbar */
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+        width: 240px;
+        z-index: 600;
+    }
+
+        .sidebar .active {
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+        }
+
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 48px);
+        padding-top: 0.5rem;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+
+    table td,
+    table th {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+</style>
+
+<div class="main">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <div class="col-1">
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+                <div class="position-sticky">
+                    <h1 class="text-center mt-2">SIMS</h1>
+                    <div class="list-group list-group-flush mx-3 mt-4">
+                        <a href="/Dashboard" class="list-group-item list-group-item-action py-2 my-2 ripple" aria-current="true">
+                            <i class="fas fa-home fa-fw me-3"></i><span>Main dashboard</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 my-2 ripple active">
+                            <i class="fas fa-graduation-cap fa-fw me-3"></i><span>Students</span>
+                        </a>
+                        <a href="/Teachers" class="list-group-item list-group-item-action py-2 my-2 ripple">
+                            <i class="fas fa-chalkboard-user fa-fw me-3"></i><span>Teachers</span>
+                        </a>
+                        <a href="/Courses" class="list-group-item list-group-item-action py-2 my-2 ripple">
+                            <i class="fas fa-school fa-fw me-3"></i><span>Courses</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="col-11">
+            <main style="margin-top: 15px; margin-left: 130px; margin-right: 10px;">
+
+                <!-- Title bar -->
+                <div class="container pt-4 mb-3">
+                    <div class="row justify-content-center align-content-center">
+                        <div class="col-10">
+                            <h1 class="my-2">Student Management</h1>
+                        </div>
+                        <div class="col-2 mt-3">
+
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <i class="fas fa-user-circle fa-fw fa-xl me-2"></i><span>Username</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">My account</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Title Bar -->
+
+                <div class="d-block mt-3 me-3" style="float: right;">
+                    <button class="btn btn-outline-primary">Add new Student</button>
+                </div>
+
+                <!-- Table of Students -->
+                <table class="table my-4">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">FIRST NAME</th>
+                            <th scope="col">LAST NAME</th>
+                            <th scope="col">NO.</th>
+                            <th scope="col">STATUS</th>
+                            <th scope="col">BIRTHDAY</th>
+                            <th scope="col">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" style="color: #666666;">1</th>
+                            <td>Do</td>
+                            <td>Quoc Bao</td>
+                            <td>1</td>
+                            <td>Active</td>
+                            <td>1/1/1999</td>
+                            <td class="py-1">
+                                <a href="" class="btn btn-outline-warning py-1 px-1" style="width: 70px;">Edit</a>
+                                <a href="" class="btn btn-outline-danger py-1 px-1" style="width: 70px;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: #666666;">2</th>
+                            <td>Tran</td>
+                            <td>Thai Son</td>
+                            <td>2</td>
+                            <td>Active</td>
+                            <td>1/1/1999</td>
+                            <td class="py-1">
+                                <a href="" class="btn btn-outline-warning py-1 px-1" style="width: 70px;">Edit</a>
+                                <a href="" class="btn btn-outline-danger py-1 px-1" style="width: 70px;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: #666666;">2</th>
+                            <td>Luong</td>
+                            <td>Thanh Dat</td>
+                            <td>3</td>
+                            <td>Not Active</td>
+                            <td>1/1/1999</td>
+                            <td class="py-1">
+                                <a href="" class="btn btn-outline-warning py-1 px-1" style="width: 70px;">Edit</a>
+                                <a href="" class="btn btn-outline-danger py-1 px-1" style="width: 70px;">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- End Table of Students -->
+
+            </main>
+        </div>
+    </div>
+</div>

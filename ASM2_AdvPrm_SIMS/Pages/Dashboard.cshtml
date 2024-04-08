@@ -1,8 +1,9 @@
 ﻿@page
 @model DashboardModel
 @{
-	ViewData["Title"] = "Dashboard";
+    ViewData["Title"] = "Dashboard";
 }
+
 
 <style>
     .main {
@@ -37,6 +38,7 @@
 
 <div class="main">
     <div class="row">
+        <!-- Sidebar -->
         <div class="col-1">
             <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
                 <div class="position-sticky">
@@ -45,21 +47,25 @@
                         <a href="#" class="list-group-item list-group-item-action py-2 my-2 ripple active" aria-current="true">
                             <i class="fas fa-home fa-fw me-3"></i><span>Main dashboard</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 my-2 ripple">
+                        <a href="/Students" class="list-group-item list-group-item-action py-2 my-2 ripple">
                             <i class="fas fa-graduation-cap fa-fw me-3"></i><span>Students</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 my-2 ripple">
+                        <a href="/Teachers" class="list-group-item list-group-item-action py-2 my-2 ripple">
                             <i class="fas fa-chalkboard-user fa-fw me-3"></i><span>Teachers</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 my-2 ripple">
+                        <a href="/Courses" class="list-group-item list-group-item-action py-2 my-2 ripple">
                             <i class="fas fa-school fa-fw me-3"></i><span>Courses</span>
                         </a>
                     </div>
                 </div>
             </nav>
         </div>
+        <!-- End Sidebar -->
+
         <div class="col-11">
             <main style="margin-top: 15px; margin-left: 130px; margin-right: 10px;">
+
+                <!-- TItle bar -->
                 <div class="container pt-4 mb-3">
                     <div class="row justify-content-center align-content-center">
                         <div class="col-10">
@@ -77,9 +83,10 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
+                <!-- End Title bar -->
+                <!-- Content -->
                 <div class="row py-4">
                     <div class="col-4">
                         <div class="card border-left-primary shadow h-100 py-2">
@@ -89,7 +96,7 @@
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Number of Students
                                         </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">69 students</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"> students</div>
                                     </div>
                                     <div class="col-auto">
                                         <i class="fas fa-graduation-cap fa-2x text-gray-300"></i>
@@ -123,7 +130,7 @@
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                             Number of Courses
                                         </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">999</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">courses</div>
                                     </div>
                                     <div class="col-auto">
                                         <i class="fas fa-school fa-2x text-gray-300"></i>
@@ -144,6 +151,7 @@
                         STEVEN HAWKING
                     </div>
                 </div>
+                <!-- End Content -->
 
             </main>
         </div>
