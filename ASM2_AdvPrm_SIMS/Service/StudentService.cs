@@ -46,5 +46,9 @@ namespace ASM2_AdvPrm_SIMS.Service
                 _studentContext.UpdateStudent(id, student);
             }
         }
+        public int CountStudentsInCsv()
+        {
+            return _studentContext.CountStudentsInCsv();
+        }
     }
 }

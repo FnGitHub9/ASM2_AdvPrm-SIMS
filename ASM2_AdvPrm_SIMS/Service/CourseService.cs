@@ -42,5 +42,9 @@ namespace ASM2_AdvPrm_SIMS.Service
                 Courses = GetCourses(); // Refresh courses after deletion
             }
         }
+        public int CountCourseInCSV()
+        {
+            return _courseContext.CountCourseInCSV();
+        }
     }
 }
