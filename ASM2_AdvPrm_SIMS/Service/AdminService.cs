@@ -8,17 +8,17 @@ namespace ASM2_AdvPrm_SIMS.Service
     public class AdminService
     {
         private readonly AdminContext _adminContext;
-        public IList<Admin> Administrators { get; set; }
+        public IList<Admin> Admins { get; set; }
 
         public AdminService(AdminContext adminContext)
         {
             _adminContext = adminContext;
-            Administrators = GetAdministrators();
+            Admins = GetAdministrators();
         }
 
         public IList<Admin> GetAdministrators()
         {
-            return _adminContext.Administrators.ToList();
+            return _adminContext.Admins;
         }
 
         public void AddAdmin(Admin admin)
@@ -33,7 +33,7 @@ namespace ASM2_AdvPrm_SIMS.Service
 
         public void DeleteAdmin(int id)
         {
-            var admin = _adminContext.Administrators.Find(a => a.Id == id);
+            var admin = _adminContext.Admins.Find(a => a.Id == id);
             if (admin != null)
             {
                 _adminContext.DeleteAdmin(id);
