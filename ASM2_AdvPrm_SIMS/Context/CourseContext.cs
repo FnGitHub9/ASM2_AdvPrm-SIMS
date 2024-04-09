@@ -12,7 +12,7 @@ namespace ASM2_AdvPrm_SIMS.Context
         public List<Course> Courses { get; set; }
         private readonly string filePath;
 
-        public CourseContext()
+        public CourseContext(string filePath)
         {
             this.filePath = filePath;
             Courses = ReadDataFromCsvAndUpdateId(filePath);
