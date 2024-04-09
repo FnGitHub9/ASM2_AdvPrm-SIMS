@@ -94,47 +94,42 @@
                 </div>
                 <!-- End Title Bar -->
                 <!-- Add Student Form -->
-                <!--
+                
                 <form method="post">
+                    <input type="hidden" asp-for="Students.Id">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="row">
-                        <input type="hidden" asp-for="Drink"
                         <div class="col-3">
                             <div class="form-floating mb-2 mt-2">
-                                <input type="text" class="form-control" asp-for="NewStudent.firstName">
-                                <label asp-for="NewStudent.firstName">First name</label>
+                                <input type="text" class="form-control" asp-for="Students.firstName">
+                                <label asp-for="Students.firstName">First name</label>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-floating mb-2 mt-2">
-                                <input type="text" class="form-control" asp-for="NewStudent.lastName">
-                                <label asp-for="NewStudent.lastName">Last name</label>
+                                <input type="text" class="form-control" asp-for="Students.lastName">
+                                <label asp-for="Students.lastName">Last name</label>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-floating mb-2 mt-2">
-                                <input type="text" class="form-control" asp-for="NewStudent.StudentNo">
-                                <label asp-for="NewStudent.StudentNo">Student No.</label>
-                            </div>
-                        </div><div class="col-3">
-                            <div class="form-floating mb-2 mt-2">
-                                <input type="text" class="form-control" asp-for="NewStudent.Birthdate">
-                                <label asp-for="NewStudent.Birthdate">Date of Birth</label>
+                                <input type="text" class="form-control" asp-for="Students.Birthdate">
+                                <label asp-for="Students.Birthdate">Date of Birth</label>
                             </div>
                         </div>
                     </div>
                     <div class="form-floating mb-2 mt-2">
-                        <select class="form-select" asp-for="NewStudent.Status">
+                        <select class="form-select" asp-for="Students.Status">
                             <option value="Active">Active</option>
                             <option value="Not active">Not active</option>
                         </select>
-                        <label asp-for="NewStudent.Status" class="form-label">Status</label>
+                        <label asp-for="Students.Status" class="form-label">Status</label>
                     </div>
                     <div class="text-center pt-3">
                         <button type="submit" value="Edit" class="btn btn-outline-primary">Edit</button>
                     </div>
                 </form>
-                -->
+                
 
                 
                 <!-- End Add Student Form-->

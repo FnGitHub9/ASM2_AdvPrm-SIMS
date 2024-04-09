@@ -1,4 +1,140 @@
 ﻿@page
 @model ASM2_AdvPrm_SIMS.Pages.Teachers.EditModel
 @{
+    ViewData["Title"] = "Edit Teacher";
 }
+<style>
+    .main {
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px 0 0; /* Height of navbar */
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+        width: 240px;
+        z-index: 600;
+    }
+
+        .sidebar .active {
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+        }
+
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 48px);
+        padding-top: 0.5rem;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+
+    table td,
+    table th {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+</style>
+<div class="main">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <div class="col-1">
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+                <div class="position-sticky">
+                    <h1 class="text-center mt-2">SIMS</h1>
+                    <div class="list-group list-group-flush mx-3 mt-4">
+                        <a href="/Dashboard" class="list-group-item list-group-item-action py-2 my-2 ripple" aria-current="true">
+                            <i class="fas fa-home fa-fw me-3"></i><span>Main dashboard</span>
+                        </a>
+                        <a href="/Students" class="list-group-item list-group-item-action py-2 my-2 ripple">
+                            <i class="fas fa-graduation-cap fa-fw me-3"></i><span>Students</span>
+                        </a>
+                        <a href="/Teachers" class="list-group-item list-group-item-action py-2 my-2 ripple">
+                            <i class="fas fa-chalkboard-user fa-fw me-3"></i><span>Teachers</span>
+                        </a>
+                        <a href="/Courses" class="list-group-item list-group-item-action py-2 my-2 ripple">
+                            <i class="fas fa-school fa-fw me-3"></i><span>Courses</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="col-11">
+            <main style="margin-top: 15px; margin-left: 130px; margin-right: 10px;">
+
+                <!-- Title bar -->
+                <div class="container pt-4 mb-3">
+                    <div class="row justify-content-center align-content-center">
+                        <div class="col-10">
+                            <h1 class="my-2">Edit Teachers</h1>
+                        </div>
+                        <div class="col-2 mt-3">
+
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <i class="fas fa-user-circle fa-fw fa-xl me-2"></i><span>Username</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">My account</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Title Bar -->
+                <!-- Add Teacher Form -->
+
+                <form method="post">
+                    <input type="hidden" asp-for="Teachers.Id">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-floating mb-2 mt-2">
+                                <input type="text" class="form-control" asp-for="Teachers.FirstName">
+                                <label asp-for="Teachers.FirstName">First name</label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-floating mb-2 mt-2">
+                                <input type="text" class="form-control" asp-for="Teachers.LastName">
+                                <label asp-for="Teachers.LastName">Last name</label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-floating mb-2 mt-2">
+                                <input type="text" class="form-control" asp-for="Teachers.Subject">
+                                <label asp-for="Teachers.Subject">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-2 mt-2">
+                        <select class="form-select" asp-for="Teachers.Status">
+                            <option value="Active">Active</option>
+                            <option value="Not active">Not active</option>
+                        </select>
+                        <label asp-for="Teachers.Status" class="form-label">Status</label>
+                    </div>
+                    <div class="text-center pt-3">
+                        <button type="submit" value="Edit" class="btn btn-outline-primary">Edit</button>
+                    </div>
+                </form>
+
+
+
+                <!-- End Add Teacher Form-->
+
+            </main>
+        </div>
+    </div>
+</div>
