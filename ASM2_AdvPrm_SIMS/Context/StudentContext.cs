@@ -104,9 +104,9 @@ namespace ASM2_AdvPrm_SIMS.Context
                                 student.Id = int.Parse(values[0]);
                                 student.firstName = values[1];
                                 student.lastName = values[2];
-                                student.StudentNo = int.Parse(values[3]);
-                                student.Status = bool.Parse(values[4]);
-                                student.Birthdate = DateTime.Parse(values[5]);
+                                student.StudentNo = int.Parse(values[4]);
+                                student.Status = values[5];
+                                student.Birthdate = values[6];
                             };
                             Students.Add(student);
                             if (student.Id >= nextStudentId)

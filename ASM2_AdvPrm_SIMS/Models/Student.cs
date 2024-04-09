@@ -13,8 +13,8 @@ namespace ASM2_AdvPrm_SIMS.Models
 
         public int StudentNo { get; set; }
 
-        public bool Status {  get; set; }
-        public DateTime Birthdate { get; set; }
+        public string Status {  get; set; }
+        public string Birthdate { get; set; }
 
     }
 }
