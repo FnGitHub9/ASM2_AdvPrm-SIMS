@@ -97,31 +97,26 @@
 
                 <!-- Add Student Form -->
                 <div class="py-2">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-body">
                             <div class="card-title">
                                 <h3 class="text-center">Add Teacher</h3>
                                 <form method="post">
                                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                     <div class="row">
-                                        <div class="col-3">
+                                        <div class="col-4">
                                             <div class="form-floating mb-2 mt-2">
                                                 <input type="text" class="form-control" asp-for="NewStudent.firstName">
                                                 <label asp-for="NewStudent.firstName">First name</label>
                                             </div>
                                         </div>
-                                        <div class="col-3">
+                                        <div class="col-4">
                                             <div class="form-floating mb-2 mt-2">
                                                 <input type="text" class="form-control" asp-for="NewStudent.lastName">
                                                 <label asp-for="NewStudent.lastName">Last name</label>
                                             </div>
                                         </div>
-                                        <div class="col-3">
-                                            <div class="form-floating mb-2 mt-2">
-                                                <input type="text" class="form-control" asp-for="NewStudent.StudentNo">
-                                                <label asp-for="NewStudent.StudentNo">Student No.</label>
-                                            </div>
-                                        </div><div class="col-3">
+                                       <div class="col-4">
                                             <div class="form-floating mb-2 mt-2">
                                                 <input type="text" class="form-control" asp-for="NewStudent.Birthdate">
                                                 <label asp-for="NewStudent.Birthdate">Date of Birth</label>
@@ -152,7 +147,6 @@
                             <th scope="col">ID</th>
                             <th scope="col">FIRST NAME</th>
                             <th scope="col">LAST NAME</th>
-                            <th scope="col">NO.</th>
                             <th scope="col">STATUS</th>
                             <th scope="col">DATE OF BIRTH</th>
                             <th scope="col">ACTION</th>
@@ -165,7 +159,6 @@
                                 <th scope="row" style="color: #666666;">@student.Id</th>
                                 <td>@student.firstName</td>
                                 <td>@student.lastName</td>
-                                <td>@student.StudentNo</td>
                                 <td>@student.Status</td>
                                 <td>@student.Birthdate</td>
                                 <td class="py-1">

@@ -8,11 +8,6 @@ namespace ASM2_AdvPrm_SIMS.Models
         [Required]
         public string firstName { get; set; }
         public string lastName { get; set; }
-
-        public string Password { get; set; }
-
-        public int StudentNo { get; set; }
-
         public string Status {  get; set; }
         public string Birthdate { get; set; }
 

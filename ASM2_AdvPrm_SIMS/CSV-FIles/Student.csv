@@ -1,87 +1,90 @@
-Id,firstName,lastName,Password,StudentNo,Status,Birthdate
-13001,Ora,Klein,P@ssword,13001,Active,04/02/2000
-13002,Beulah,McMillan,P@ssword,13002,Active,11/12/1999
-13003,Florence,Stark,P@ssword,13003,Active,12/19/1997
-13004,Noah,Gilbertson,P@ssword,13004,Active,6/20/2000
-13005,Erna,Parker,P@ssword,13005,Active,5/17/1998
-13006,Sherry,Santana,P@ssword,13006,Active,8/22/1999
-13007,Ronald,Lees,P@ssword,13012,Active,05/11/1998
-13008,Latasha,Pratt,P@ssword,13013,Active,8/13/1999
-13009,Misty,Thomas,P@ssword,13014,Active,07/06/2000
-13010,Petra,Barlow,P@ssword,13015,Active,3/19/1997
-13011,Bonnie,Hampton,P@ssword,13016,Active,04/10/1998
-13012,Dion,Matheson,P@ssword,13017,Active,5/17/1999
-13013,Cesar,McCray,P@ssword,13018,Active,2/17/2001
-13014,Rickey,Cottle,P@ssword,13019,Active,08/09/2000
-13015,Fredrick,Markley,P@ssword,13020,Active,6/17/1999
-13016,Joshua,Bartels,P@ssword,13021,Active,3/19/2001
-13017,Maribel,Parsons,P@ssword,13022,Active,03/10/2000
-13018,Erma,Ballard,P@ssword,13023,Active,04/03/1998
-13019,Wilfred,Bevins,P@ssword,13024,Active,4/13/2001
-13020,Rogelio,Cazares,P@ssword,13025,Active,02/01/2000
-13021,Dixie,Morrison,P@ssword,13026,Active,08/12/1999
-13022,Williams,Bisson,P@ssword,13027,Active,03/06/2001
-13023,Christie,Clayton,P@ssword,13028,Active,07/02/2000
-13024,Angelina,Craig,P@ssword,13029,Active,06/02/1999
-13025,Earnest,Rome,P@ssword,13030,Active,07/06/2001
-13026,Madeline,Sargent,P@ssword,13031,Active,9/19/2000
-13027,Gene,Angulo,P@ssword,13032,Active,3/27/1997
-13028,Daphne,Bentley,P@ssword,13033,Active,4/15/1998
-13029,Dora,Montgomery,P@ssword,13034,Active,05/07/1999
-13030,Bertha,Nolan,P@ssword,13035,Active,2/27/2001
-13031,Stacey,Foltz,P@ssword,13036,Active,8/29/2000
-13032,Wilma,Aguirre,P@ssword,13037,Active,6/16/1999
-13033,Forrest,Downes,P@ssword,13038,Active,3/13/2001
-13034,Noah,Roger,P@ssword,13039,Active,03/11/2000
-13035,Tracy,Baxley,P@ssword,13040,Active,4/22/1998
-13036,Federico,Fiore,P@ssword,13041,Active,04/02/2000
-13037,Nancy,Mendoza,P@ssword,13042,Active,11/12/1999
-13038,Luther,Briley,P@ssword,13043,Active,12/19/1997
-13039,Norbert,Lunn,P@ssword,13044,Active,6/20/2000
-13040,Fidel,Obryan,P@ssword,13045,Active,5/17/1998
-13041,Byron,Montenegro,P@ssword,13046,Active,8/22/1999
-13042,Blaine,Dulaney,P@ssword,13047,Active,7/27/2000
-13043,Dennis,Word,P@ssword,13048,Active,3/25/1997
-13044,Coy,Whiteman,P@ssword,13049,Active,4/29/1998
-13045,Rosie,Ingram,P@ssword,13050,Active,06/05/2000
-13046,Anita,Miranda,P@ssword,13051,Active,10/13/1999
-13047,Jerri,Noel,P@ssword,13052,Active,05/11/1998
-13048,Dona,Small,P@ssword,13053,Active,8/13/1999
-13049,Erik,Theriault,P@ssword,13054,Active,07/06/2000
-13050,Earnestine,Mosley,P@ssword,13055,Active,3/19/1997
-13051,Jimmie,Petty,P@ssword,13056,Active,04/10/1998
-13052,Burton,Saul,P@ssword,13057,Active,5/17/1999
-13053,Juanita,Hardy,P@ssword,13058,Active,2/17/2001
-13054,Benny,Vanover,P@ssword,13059,Active,08/09/2000
-13055,Harrison,Badillo,P@ssword,13060,Active,6/17/1999
-13056,Jorge,Bevins,P@ssword,13061,Active,3/19/2001
-13057,Briana,Tyson,P@ssword,13062,Active,03/10/2000
-13058,Shelby,Abbott,P@ssword,13063,Active,04/03/1998
-13059,Carlos,Lauer,P@ssword,13064,Active,4/13/2001
-13060,Kristi,Kaufman,P@ssword,13065,Active,02/01/2000
-13061,Sophia,Wilder,P@ssword,13066,Active,08/12/1999
-13062,Angelita,Valentine,P@ssword,13067,Active,03/06/2001
-13063,Dexter,Wyant,P@ssword,13068,Active,07/02/2000
-13064,Monique,McMillan,P@ssword,13069,Active,06/02/1999
-13065,Miles,Runyan,P@ssword,13070,Active,07/06/2001
-13066,Liza,Grimes,P@ssword,13071,Active,9/19/2000
-13067,Mara,Alford,P@ssword,13072,Active,3/27/1997
-13068,Alison,Ochoa,P@ssword,13073,Active,4/15/1998
-13069,Leslie,Navarro,P@ssword,13074,Active,05/07/1999
-13070,Jo,Ochoa,P@ssword,13075,Active,2/27/2001
-13071,Jacklyn,Steele,P@ssword,13076,Active,8/29/2000
-13072,Karyn,Dale,P@ssword,13077,Active,6/16/1999
-13073,Ines,Meyers,P@ssword,13078,Active,3/13/2001
-13074,Vincent,Doucette,P@ssword,13079,Active,03/11/2000
-13075,Noemi,Chase,P@ssword,13080,Active,4/22/1998
-13076,Daryl,Flemming,P@ssword,13081,Active,04/02/2000
-13077,Winnie,Carson,P@ssword,13082,Active,11/12/1999
-13078,Ilene,Valentine,P@ssword,13083,Active,12/19/1997
-13079,Alton,Wooley,P@ssword,13084,Active,6/20/2000
-13080,Lizzie,Stokes,P@ssword,13085,Active,5/17/1998
-13081,Amos,Crumpton,P@ssword,13086,Active,8/22/1999
-13082,Belinda,Orr,P@ssword,13087,Active,7/27/2000
-13083,Desiree,Hawkins,P@ssword,13088,Active,3/25/1997
-13084,Dane,McCullough,P@ssword,13089,Active,4/29/1998
-13085,Genevieve,Cole,P@ssword,13090,Active,06/05/2000
-13086,Ramiro,Skeen,P@ssword,13091,Active,10/13/1999
+Id,firstName,lastName,Status,Birthdate
+1,           Joell,           McCart,Not active,3/5/1980
+13,           Allene,           Englishby,Active,2/10/1993
+14,           Kerrill,           Withringten,Not active,9/7/1989
+15,           Gregorius,           Goulden,Not active,6/30/1995
+16,           Jo-anne,           Yackiminie,Not active,5/24/1998
+17,           Gilberta,           Wholesworth,Not active,8/25/2004
+18,           Muire,           Olver,Not active,5/17/1984
+19,           Elga,           Grindle,Active,3/29/1998
+20,           Rora,           Tembey,Not active,7/23/1993
+21,           Garret,           Barthrup,Active,7/20/1980
+22,           Maurizio,           Thorneloe,Active,7/4/2000
+23,           Madeline,           Fideler,Active,12/29/1989
+24,           Coraline,           L'Episcopi,Active,9/26/1983
+25,           Ahmad,           Alforde,Active,7/2/1994
+26,           Chandal,           Donet,Active,2/13/1999
+27,           Waverley,           Filippone,Active,10/21/1999
+28,           Torrey,           Renehan,Active,4/13/2000
+29,           Paulette,           Jancar,Active,9/23/1980
+30,           Luciano,           Klousner,Active,6/26/1983
+31,           Nessi,           Maulkin,Active,7/7/1983
+32,           Merell,           Shelborne,Active,4/15/1981
+33,           Lucienne,           Trumper,Not active,5/11/1984
+34,           Angelia,           Colley,Not active,12/20/1993
+35,           Adriano,           Pook,Active,9/25/1984
+36,           Janetta,           Sutty,Active,4/17/1990
+37,           Jillene,           Stickens,Active,5/18/1985
+38,           Kin,           Shears,Not active,11/13/1988
+39,           Tamarah,           Menhenitt,Active,12/14/1985
+40,           Kass,           McCowen,Active,10/14/2001
+41,           Winston,           Tipling,Active,4/30/1996
+42,           Issi,           Carah,Not active,3/17/1981
+43,           Starlin,           Hub,Not active,8/22/1990
+44,           Franny,           Godbolt,Not active,1/22/1982
+45,           Rosemaria,           Killbey,Active,12/4/2002
+46,           Loy,           Waddilow,Active,1/1/1984
+47,           Valina,           Rucklidge,Active,2/22/2003
+48,           Domenic,           Gullis,Active,12/13/2000
+49,           Hart,           Duetschens,Not active,5/6/2003
+50,           Elianora,           Cheales,Not active,8/22/1991
+51,           Tabbitha,           Dy,Active,8/30/1994
+52,           Oona,           Ryce,Not active,2/23/1981
+53,           Morty,           Maggs,Not active,6/4/1995
+54,           Charil,           Elleray,Active,1/26/1987
+55,           Trudey,           Rabidge,Active,3/31/1985
+56,           Reube,           Blankley,Not active,2/4/1989
+57,           Shantee,           Stobart,Active,7/6/1992
+58,           Wilhelm,           Gall,Active,2/2/1983
+59,           Jessalin,           Syvret,Active,11/1/1981
+60,           Sig,           Seeger,Not active,10/21/1994
+61,           Leanor,           Scuse,Active,1/8/1989
+62,           Kettie,           Gullivan,Not active,10/31/1999
+63,           Brent,           Briers,Not active,2/23/1980
+64,           Vassili,           Knevit,Not active,10/5/1981
+65,           Walker,           Rosie,Not active,10/15/2003
+66,           Rebekkah,           Coveny,Not active,6/20/1998
+67,           Ferdinanda,           Drains,Active,1/22/1981
+68,           Raphael,           Monelli,Not active,3/24/1988
+69,           Parnell,           Francklyn,Not active,10/27/1989
+70,           Tiff,           Ranson,Active,4/5/1980
+71,           Emelen,           Cicchetto,Active,10/9/1982
+72,           Carlee,           Lints,Not active,7/24/1990
+73,           Lynnett,           Gainfort,Not active,1/14/2004
+74,           Dionne,           Moneypenny,Active,11/8/1992
+75,           Rochell,           O'Kieran,Active,4/2/1987
+76,           Aurilia,           Prosh,Active,9/4/1990
+77,           Romona,           Tungate,Not active,9/23/1988
+78,           Philbert,           Kemery,Active,5/10/2004
+79,           Gwendolin,           Greason,Active,7/26/2004
+80,           Ericka,           Sommerland,Active,2/19/1989
+81,           Brent,           O'Halloran,Active,3/22/1994
+82,           Egon,           Ratazzi,Active,11/12/1993
+83,           Anatol,           Logan,Active,8/13/1996
+84,           Grantley,           Yurkov,Active,2/17/1982
+85,           Verne,           Burberow,Active,8/3/1994
+86,           Rees,           Coursor,Not active,3/26/1997
+87,           Hiram,           Clohisey,Not active,10/5/1997
+88,           Anderson,           Kirrage,Active,3/22/2004
+89,           Carey,           Kubek,Active,8/26/1991
+90,           Kameko,           Crissil,Not active,4/19/2002
+91,           Selene,           Lamasna,Active,5/22/1998
+92,           Maryjo,           Shilton,Not active,10/23/1988
+93,           Neill,           Doorey,Active,3/21/1997
+94,           Morganne,           Calcraft,Active,12/6/1985
+95,           Eugenia,           Trollope,Not active,3/10/1985
+96,           Brittney,           Torry,Not active,3/28/1995
+97,           Lilah,           Yarrell,Not active,7/20/1984
+98,           Karmen,           Halversen,Not active,1/6/2003
+99,           Tabbie,           Hazeman,Active,1/22/1991
+100,           Perice,           Edney,Not active,7/3/1996

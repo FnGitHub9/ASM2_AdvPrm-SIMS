@@ -33,7 +33,6 @@ namespace ASM2_AdvPrm_SIMS.Context
             {
                 existingStudent.firstName = updateStudent.firstName;
                 existingStudent.lastName = updateStudent.lastName;
-                existingStudent.StudentNo = updateStudent.StudentNo;
                 existingStudent.Status = updateStudent.Status;
                 existingStudent.Birthdate = updateStudent.Birthdate;
 
@@ -97,16 +96,15 @@ namespace ASM2_AdvPrm_SIMS.Context
                         string line = reader.ReadLine();
                         string[] values = line.Split(',');
 
-                        if (values.Length >= 7)
+                        if (values.Length >= 5)
                         {
                             Student student = new Student();
                             {
                                 student.Id = int.Parse(values[0]);
                                 student.firstName = values[1];
                                 student.lastName = values[2];
-                                student.StudentNo = int.Parse(values[4]);
-                                student.Status = values[5];
-                                student.Birthdate = values[6];
+                                student.Status = values[3];
+                                student.Birthdate = values[4];
                             };
                             Students.Add(student);
                             if (student.Id >= nextStudentId)
@@ -123,11 +121,11 @@ namespace ASM2_AdvPrm_SIMS.Context
         {
             using (StreamWriter writer = new StreamWriter(filePath))
             {
-                writer.WriteLine("Id,firstName,lastName,Password,StudentNo,Status,Birthdate");
+                writer.WriteLine("Id,firstName,lastName,Status,Birthdate");
 
                 foreach (var student in Students)
                 {
-                    writer.WriteLine($"{student.Id}, {student.firstName}, {student.lastName}, {student.StudentNo},{student.Status},{student.Birthdate}");
+                    writer.WriteLine($"{student.Id}, {student.firstName}, {student.lastName},{student.Status},{student.Birthdate}");
                 }
             }
         }

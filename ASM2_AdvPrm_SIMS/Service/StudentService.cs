@@ -5,7 +5,7 @@ namespace ASM2_AdvPrm_SIMS.Service
 {
     public class StudentService
     {
-        private readonly StudentContext _studentContext = default!;
+        private readonly StudentContext _studentContext;
         public IList<Student> Students { get; set; }
 
         public StudentService(StudentContext studentContext)
@@ -15,11 +15,7 @@ namespace ASM2_AdvPrm_SIMS.Service
         }
         public IList<Student> GetStudents()
         {
-            if (_studentContext.Students != null)
-            {
-                return _studentContext.Students;
-            }
-            return new List<Student>();
+            return _studentContext.Students.ToList();
         }
         public void AddStudent(Student student)
         {
@@ -30,13 +26,10 @@ namespace ASM2_AdvPrm_SIMS.Service
         }
         public void RemoveStudent(int id)
         {
-            if (_studentContext.Students !=  null)
+            var teacher = _studentContext.Students.Find(t => t.Id == id);
+            if (teacher != null)
             {
-                var student = _studentContext.Students.Find(s => s.Id == id);
-                if (student != null)
-                {
-                    _studentContext.DeleteStudent(id);
-                }
+                _studentContext.DeleteStudent(id);
             }
         }
         public void UpdateStudent(int id, Student student)

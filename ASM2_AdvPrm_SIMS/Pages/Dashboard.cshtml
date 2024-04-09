@@ -1,7 +1,15 @@
 ﻿@page
 @model DashboardModel
+@using ASM2_AdvPrm_SIMS.Context
 @{
     ViewData["Title"] = "Dashboard";
+    var filePath = "ASM2_AdvPrm_SIMS/CSV-Files/Student.csv"; // Update with correct file path
+    var studentContext = new StudentContext(filePath);
+    int numberOfStudents = studentContext.CountStudentsInCsv();
+
+    // Debugging statements
+    Console.WriteLine($"File Path: {filePath}");
+    Console.WriteLine($"Number of Students: {numberOfStudents}");
 }
 
 
@@ -87,59 +95,6 @@
                 </div>
                 <!-- End Title bar -->
                 <!-- Content -->
-                <div class="row py-4">
-                    <div class="col-4">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Number of Students
-                                        </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800"> students</div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-graduation-cap fa-2x text-gray-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Number of Teachers
-                                        </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800"> teachers</div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-chalkboard-user fa-2x text-gray-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Number of Courses
-                                        </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800"> courses</div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-school fa-2x text-gray-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row pt-4">
                     <div class="col-5">
                         <img src="https://fap.fpi.edu.vn/images/NewPage/HomePage/pic2.svg" width="400px" alt="">
@@ -157,3 +112,4 @@
         </div>
     </div>
 </div>
+
