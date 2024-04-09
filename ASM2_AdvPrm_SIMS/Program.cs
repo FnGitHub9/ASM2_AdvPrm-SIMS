@@ -26,7 +26,15 @@ builder.Services.AddScoped<TeacherContext>(provider =>
     return new TeacherContext(filePath);
 }
 );
+builder.Services.AddScoped<CourseService>();
 
+builder.Services.AddScoped<CourseContext>(provider =>
+{
+    string filePath = "CSV-Files/Course.csv";
+
+    return new CourseContext(filePath);
+}
+);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
