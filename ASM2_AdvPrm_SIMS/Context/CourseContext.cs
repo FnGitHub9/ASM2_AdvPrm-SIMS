@@ -95,7 +95,7 @@ namespace ASM2_AdvPrm_SIMS.Context
                             int Id = int.Parse(parts[0]);
                             string SubjectCode = parts[1];
                             string Subject = parts[2];
-                            bool Status = bool.Parse(parts[3]);
+                            string Status = parts[3];
 
                             courses.Add(new Course
                             {

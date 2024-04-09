@@ -9,6 +9,6 @@ namespace ASM2_AdvPrm_SIMS.Models
         public string SubjectCode { get; set; }
         public string Subject { get; set; }
 
-        public bool Status { get; set; }
+        public string Status { get; set; }
     }
 }

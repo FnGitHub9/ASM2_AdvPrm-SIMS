@@ -1,7 +1,6 @@
 ﻿@page
-@model ASM2_AdvPrm_SIMS.Pages.StudentsModel
+@model ASM2_AdvPrm_SIMS.Pages.TeachersModel
 @{
-    ViewData["Title"] = "Student Management";
 }
 <style>
     .main {
@@ -41,7 +40,6 @@
     }
 
 </style>
-
 <div class="main">
     <div class="row">
 
@@ -54,10 +52,10 @@
                         <a href="/Dashboard" class="list-group-item list-group-item-action py-2 my-2 ripple" aria-current="true">
                             <i class="fas fa-home fa-fw me-3"></i><span>Main dashboard</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 my-2 ripple active">
+                        <a href="/Students" class="list-group-item list-group-item-action py-2 my-2 ripple">
                             <i class="fas fa-graduation-cap fa-fw me-3"></i><span>Students</span>
                         </a>
-                        <a href="/Teachers" class="list-group-item list-group-item-action py-2 my-2 ripple">
+                        <a href="#" class="list-group-item list-group-item-action py-2 my-2 ripple active">
                             <i class="fas fa-chalkboard-user fa-fw me-3"></i><span>Teachers</span>
                         </a>
                         <a href="/Courses" class="list-group-item list-group-item-action py-2 my-2 ripple">
@@ -76,7 +74,7 @@
                 <div class="container pt-4 mb-3">
                     <div class="row justify-content-center align-content-center">
                         <div class="col-10">
-                            <h1 class="my-2">Student Management</h1>
+                            <h1 class="my-2">Teacher Management</h1>
                         </div>
                         <div class="col-2 mt-3">
 
@@ -95,86 +93,78 @@
                 </div>
                 <!-- End Title Bar -->
 
-                <!-- Add Student Form -->
+                <!-- Add Teacher Form -->
                 <div class="py-2">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">
                                 <h3 class="text-center">Add Teacher</h3>
-                                <form method="post">
-                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <div class="form-floating mb-2 mt-2">
-                                                <input type="text" class="form-control" asp-for="NewStudent.firstName">
-                                                <label asp-for="NewStudent.firstName">First name</label>
+                                    <form method="post">
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="form-floating mb-2 mt-2">
+                                                    <input type="text" class="form-control" asp-for="NewTeacher.FirstName">
+                                                    <label asp-for="NewTeacher.FirstName">First name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-floating mb-2 mt-2">
+                                                    <input type="text" class="form-control" asp-for="NewTeacher.LastName">
+                                                    <label asp-for="NewTeacher.LastName">Last name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-floating mb-2 mt-2">
+                                                    <input type="text" class="form-control" asp-for="NewTeacher.Subject">
+                                                    <label asp-for="NewTeacher.Subject">Subject</label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-3">
-                                            <div class="form-floating mb-2 mt-2">
-                                                <input type="text" class="form-control" asp-for="NewStudent.lastName">
-                                                <label asp-for="NewStudent.lastName">Last name</label>
-                                            </div>
+                                        <div class="form-floating mb-2 mt-2">
+                                            <select class="form-select" asp-for="NewTeacher.Status">
+                                                <option value="Active">Active</option>
+                                                <option value="Not active">Not active</option>
+                                            </select>
+                                            <label asp-for="NewTeacher.Status" class="form-label">Status</label>
                                         </div>
-                                        <div class="col-3">
-                                            <div class="form-floating mb-2 mt-2">
-                                                <input type="text" class="form-control" asp-for="NewStudent.StudentNo">
-                                                <label asp-for="NewStudent.StudentNo">Student No.</label>
-                                            </div>
-                                        </div><div class="col-3">
-                                            <div class="form-floating mb-2 mt-2">
-                                                <input type="text" class="form-control" asp-for="NewStudent.Birthdate">
-                                                <label asp-for="NewStudent.Birthdate">Date of Birth</label>
-                                            </div>
+                                        <div class="text-center pt-3">
+                                            <button type="submit" value="Create" class="btn btn-outline-primary">Create</button>
                                         </div>
-                                    </div>
-                                    <div class="form-floating mb-2 mt-2">
-                                        <select class="form-select" asp-for="NewStudent.Status">
-                                            <option value="Active">Active</option>
-                                            <option value="Not active">Not active</option>
-                                        </select>
-                                        <label asp-for="NewStudent.Status" class="form-label">Status</label>
-                                    </div>
-                                    <div class="text-center pt-3">
-                                        <button type="submit" value="Create" class="btn btn-outline-primary">Create</button>
-                                    </div>
-                                </form>
+                                    </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- End Add Student Form-->
-
-                <!-- Table of Students -->
+                <!-- End Add Teacher Form-->
+                <!-- Table of Teachers -->
                 <table class="table my-4">
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
                             <th scope="col">FIRST NAME</th>
                             <th scope="col">LAST NAME</th>
-                            <th scope="col">NO.</th>
+                            <th scope="col">SUBJECT</th>
                             <th scope="col">STATUS</th>
-                            <th scope="col">DATE OF BIRTH</th>
                             <th scope="col">ACTION</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var student in Model.StudentList)
+                        @foreach (var teacher in Model.TeacherList)
                         {
                             <tr>
-                                <th scope="row" style="color: #666666;">@student.Id</th>
-                                <td>@student.firstName</td>
-                                <td>@student.lastName</td>
-                                <td>@student.StudentNo</td>
-                                <td>@student.Status</td>
-                                <td>@student.Birthdate</td>
+                                <th scope="row" style="color: #666666;">@teacher.Id</th>
+                                <td>@teacher.FirstName</td>
+                                <td>@teacher.LastName</td>
+                                <td>@teacher.Subject</td>
+                                <td>@teacher.Status</td>
                                 <td class="py-1">
                                     <div class="row">
                                         <div class="col-3">
-                                            <a asp-page="/Students/Edit" asp-route-itemid="@student.Id" class="btn btn-outline-warning py-1 px-1" style="width: 70px;">Edit</a>
+                                            <a asp-page="/Teachers/Edit" asp-route-itemid="@teacher.Id" class="btn btn-outline-warning py-1 px-1" style="width: 70px;">Edit</a>
                                         </div>
                                         <div class="col-3">
-                                            <form method="post" asp-page-handler="Delete" asp-route-id="@student.Id">
+                                            <form method="post" asp-page-handler="Delete" asp-route-id="@teacher.Id">
                                                 <button class="btn btn-outline-danger py-1 px-1" style="width: 70px;">Delete</button>
                                             </form>
                                         </div>
@@ -184,12 +174,9 @@
                         }
                     </tbody>
                 </table>
-                <!-- End Table of Students -->
+                <!-- End Table of Teachers -->
 
             </main>
         </div>
     </div>
 </div>
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
