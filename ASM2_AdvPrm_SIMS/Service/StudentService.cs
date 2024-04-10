@@ -12,7 +12,7 @@ namespace ASM2_AdvPrm_SIMS.Service
         {
             _studentContext = studentContext;
             Students = GetStudents();
-            // Remove initialization of Students here
+         
         }
         public IList<Student> GetStudents()
         {

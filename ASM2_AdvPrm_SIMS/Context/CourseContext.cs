@@ -61,7 +61,7 @@ namespace ASM2_AdvPrm_SIMS.Context
             {
                 using (StreamReader reader = new StreamReader(filePath))
                 {
-                    // Skip the header line
+                
                     reader.ReadLine();
 
                     while (!reader.EndOfStream)
@@ -69,7 +69,7 @@ namespace ASM2_AdvPrm_SIMS.Context
                         string line = reader.ReadLine();
                         string[] parts = line.Split(',');
 
-                        if (parts.Length == 4) // Assuming there are 4 fields: ID, SubjectCode, Subject, Status
+                        if (parts.Length == 4) 
                         {
                             int Id = int.Parse(parts[0]);
                             string SubjectCode = parts[1];
@@ -84,7 +84,7 @@ namespace ASM2_AdvPrm_SIMS.Context
                                 Status = Status
                             });
 
-                            // Update nextCourseId if necessary
+                    
                             if (Id >= nextCourseId)
                             {
                                 nextCourseId = Id + 1;
@@ -109,10 +109,10 @@ namespace ASM2_AdvPrm_SIMS.Context
             {
                 using (StreamWriter writer = new StreamWriter(filePath))
                 {
-                    // Write header line
+                   
                     writer.WriteLine("ID,SubjectCode,Subject,Status");
 
-                    // Write data for each course
+                   
                     foreach (Course course in Courses)
                     {
                         writer.WriteLine($"{course.Id},{course.SubjectCode},{course.Subject},{course.Status}");

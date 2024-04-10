@@ -23,12 +23,12 @@ namespace ASM2_AdvPrm_SIMS.Pages.Students
             {
                 return NotFound();
             }
-            var pizza = _service.Students.FirstOrDefault(p => p.Id == itemid);
-            if (pizza == null)
+            var student = _service.Students.FirstOrDefault(p => p.Id == itemid);
+            if (student == null)
             {
                 return NotFound();
             }
-            Students = pizza;
+            Students = student;
             return Page();
         }
 

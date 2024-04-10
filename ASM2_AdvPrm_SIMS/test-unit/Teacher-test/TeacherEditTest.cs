@@ -11,7 +11,7 @@ using Xunit;
 
 namespace ASM2_AdvPrm_SIMS.Tests
 {
-    public class EditModelTestsTeacher
+    public class EditlTestsTeacher
     {
         [Fact]
         public async Task OnGetAsync_ValidId_ReturnsPageWithTeacher()

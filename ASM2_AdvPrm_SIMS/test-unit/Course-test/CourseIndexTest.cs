@@ -12,11 +12,11 @@ using Xunit;
 
 namespace ASM2_AdvPrm_SIMS.Tests
 {
-    public class CoursesModelTests : IDisposable
+    public class CoursesIndexTests : IDisposable
     {
         private string temporaryCsvFilePath;
 
-        public CoursesModelTests()
+        public CoursesIndexTests()
         {
             // Create a temporary CSV file for testing
             temporaryCsvFilePath = Path.GetTempFileName();

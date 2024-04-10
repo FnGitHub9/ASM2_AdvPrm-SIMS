@@ -10,7 +10,7 @@ using Xunit;
 
 namespace ASM2_AdvPrm_SIMS.Tests
 {
-    public class StudentsModelTests
+    public class StudentsIndexTests
     {
         [Fact]
         public void OnGet_ReturnsListOfStudents()

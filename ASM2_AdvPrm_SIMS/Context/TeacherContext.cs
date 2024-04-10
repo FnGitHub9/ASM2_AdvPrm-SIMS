@@ -57,7 +57,7 @@ namespace ASM2_AdvPrm_SIMS.Context
                         string line = reader.ReadLine();
                         string[] parts = line.Split(',');
 
-                        if (parts.Length == 5) // Assuming there are 5 fields: Id, FirstName, LastName, Subject, Status
+                        if (parts.Length == 5) 
                         {
                             int Id = int.Parse(parts[0]);
                             string FirstName = parts[1];
