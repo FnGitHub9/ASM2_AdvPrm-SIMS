@@ -24,6 +24,7 @@ namespace ASM2_AdvPrm_SIMS.Service
         public void AddTeacher(Teacher teacher)
         {
             _teacherContext.AddTeacher(teacher);
+            Teachers = GetTeachers(); // Refresh the list of teachers after addition
         }
 
         public void UpdateTeacher(int id, Teacher teacher)
@@ -33,10 +34,11 @@ namespace ASM2_AdvPrm_SIMS.Service
 
         public void DeleteTeacher(int id)
         {
-            var teacher = _teacherContext.Teachers.Find(t => t.Id == id);
+            var teacher = Teachers.FirstOrDefault(t => t.Id == id);
             if (teacher != null)
             {
                 _teacherContext.DeleteTeacher(id);
+                Teachers = GetTeachers(); // Refresh the list of teachers after deletion
             }
         }
     }

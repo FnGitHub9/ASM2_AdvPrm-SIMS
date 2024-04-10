@@ -52,28 +52,7 @@ namespace ASM2_AdvPrm_SIMS.Context
                 Console.WriteLine($"Course with ID {CourseId} not found.");
             }
         }
-        public int CountCourseInCSV()
-        {
-            int courseCount = 0;
-            if (File.Exists(filePath))
-            {
-                using (StreamReader  sr = new StreamReader(filePath))
-                {
-                    sr.ReadLine();
-                    while (!sr.EndOfStream)
-                    {
-                        sr.ReadLine() ;
-                        courseCount++;
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine("Unable to read csv");
-            }
-            return courseCount;
-        }
-
+ 
         private List<Course> ReadDataFromCsvAndUpdateId(string filePath)
         {
             List<Course> courses = new List<Course>();

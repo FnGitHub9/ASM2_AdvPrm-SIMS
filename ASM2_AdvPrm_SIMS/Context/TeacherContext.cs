@@ -104,28 +104,7 @@ namespace ASM2_AdvPrm_SIMS.Context
                 Console.WriteLine($"Teacher with ID {teacherID} not found.");
             }
         }
-        public int CountTeachersInCsv()
-        {
-            int teachersCount = 0;
-            if (File.Exists(filePath))
-            {
-                using (StreamReader sr = new StreamReader(filePath))
-                {
-                    sr.ReadLine();
-                    while (!sr.EndOfStream) 
-                    {
-                        sr.ReadLine() ;
-                        teachersCount++;
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine("Unable to read csv");
-            }
-
-            return teachersCount;
-        }
+ 
 
         private void WriteDataToCsv(string filePath)
         {

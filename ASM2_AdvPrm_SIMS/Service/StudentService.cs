@@ -29,10 +29,11 @@ namespace ASM2_AdvPrm_SIMS.Service
 
         public void RemoveStudent(int id)
         {
-            var teacher = _studentContext.Students.Find(t => t.Id == id);
-            if (teacher != null)
+            var student = _studentContext.Students.Find(s => s.Id == id);
+            if (student != null)
             {
                 _studentContext.DeleteStudent(id);
+                Students.Remove(student); // Remove the student from the local Students collection
             }
         }
         public void UpdateStudent(int id, Student student)
