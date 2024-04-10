@@ -39,9 +39,5 @@ namespace ASM2_AdvPrm_SIMS.Service
                 _teacherContext.DeleteTeacher(id);
             }
         }
-        public int CountTeachersInCsv()
-        {
-            return _teacherContext.CountTeachersInCsv();
-        }
     }
 }

@@ -73,24 +73,7 @@
 
                 <!-- Title bar -->
                 <div class="container pt-4 mb-3">
-                    <div class="row justify-content-center align-content-center">
-                        <div class="col-10">
-                            <h1 class="my-2">Edit Teachers</h1>
-                        </div>
-                        <div class="col-2 mt-3">
-
-                            <div class="dropdown">
-                                <a class="btn dropdown-toggle" data-bs-toggle="dropdown">
-                                    <i class="fas fa-user-circle fa-fw fa-xl me-2"></i><span>Username</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">My account</a></li>
-                                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
+                    <h1 class="my-2">Edit Teachers</h1>
                 </div>
                 <!-- End Title Bar -->
                 <!-- Add Teacher Form -->
@@ -99,19 +82,19 @@
                     <input type="hidden" asp-for="Teachers.Id">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-4">
                             <div class="form-floating mb-2 mt-2">
                                 <input type="text" class="form-control" asp-for="Teachers.FirstName">
                                 <label asp-for="Teachers.FirstName">First name</label>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-4">
                             <div class="form-floating mb-2 mt-2">
                                 <input type="text" class="form-control" asp-for="Teachers.LastName">
                                 <label asp-for="Teachers.LastName">Last name</label>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-4">
                             <div class="form-floating mb-2 mt-2">
                                 <input type="text" class="form-control" asp-for="Teachers.Subject">
                                 <label asp-for="Teachers.Subject">Subject</label>

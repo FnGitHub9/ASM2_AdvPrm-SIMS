@@ -74,33 +74,15 @@
 
                 <!-- Title bar -->
                 <div class="container pt-4 mb-3">
-                    <div class="row justify-content-center align-content-center">
-                        <div class="col-10">
-                            <h1 class="my-2">Student Management</h1>
-                        </div>
-                        <div class="col-2 mt-3">
-
-                            <div class="dropdown">
-                                <a class="btn dropdown-toggle" data-bs-toggle="dropdown">
-                                    <i class="fas fa-user-circle fa-fw fa-xl me-2"></i><span>Username</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">My account</a></li>
-                                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
+                    <h1 class="my-2">Student Management</h1>
                 </div>
                 <!-- End Title Bar -->
-
                 <!-- Add Student Form -->
-                <div class="py-2">
+                <div class="py-2" style="margin-top: 20px;">
                     <div class="card shadow">
                         <div class="card-body">
                             <div class="card-title">
-                                <h3 class="text-center">Add Teacher</h3>
+                                <h3 class="text-center">Add Student</h3>
                                 <form method="post">
                                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                     <div class="row">
@@ -116,7 +98,7 @@
                                                 <label asp-for="NewStudent.lastName">Last name</label>
                                             </div>
                                         </div>
-                                       <div class="col-4">
+                                        <div class="col-4">
                                             <div class="form-floating mb-2 mt-2">
                                                 <input type="text" class="form-control" asp-for="NewStudent.Birthdate">
                                                 <label asp-for="NewStudent.Birthdate">Date of Birth</label>
@@ -139,7 +121,6 @@
                     </div>
                 </div>
                 <!-- End Add Student Form-->
-
                 <!-- Table of Students -->
                 <table class="table my-4">
                     <thead>
