@@ -115,7 +115,7 @@ namespace ASM2_AdvPrm_SIMS.Context
 
                 foreach (var student in Students)
                 {
-                    writer.WriteLine($"{student.Id}, {student.firstName}, {student.lastName},{student.Status},{student.Birthdate}");
+                    writer.WriteLine($"{student.Id},{student.firstName},{student.lastName},{student.Status},{student.Birthdate}");
                 }
             }
         }
