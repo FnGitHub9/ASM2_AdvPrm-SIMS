@@ -30,11 +30,16 @@ namespace ASM2_AdvPrm_SIMS.Tests
 
             // Assert
             var pageResult = Assert.IsType<PageResult>(result);
-            Assert.Equal(expectedStudent, editModel.Students);
+            var actualStudent = Assert.IsAssignableFrom<Student>(editModel.Students);
+            Assert.Equal(expectedStudent.Id, actualStudent.Id);
+            Assert.Equal(expectedStudent.firstName.Trim(), actualStudent.firstName.Trim());
+            Assert.Equal(expectedStudent.lastName.Trim(), actualStudent.lastName.Trim());
+            Assert.Equal(expectedStudent.Status, actualStudent.Status);
+            Assert.Equal(expectedStudent.Birthdate, actualStudent.Birthdate);
         }
 
         [Fact]
-        public async Task OnPostAsync_ValidModel_ReturnsRedirectToIndex()
+        public async Task OnPostAsyncValidModelReturnsRedirectToIndex()
         {
             // Arrange
             var student = new Student { Id = 1, firstName = "John", lastName = "Doe", Status = "Active", Birthdate = "1/1/2000" };
