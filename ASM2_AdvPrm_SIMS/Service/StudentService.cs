@@ -6,12 +6,13 @@ namespace ASM2_AdvPrm_SIMS.Service
     public class StudentService
     {
         private readonly StudentContext _studentContext;
-        public IList<Student> Students { get; set; }
+        public virtual IList<Student> Students { get; set; } = new List<Student>(); // Initialize to an empty list
 
         public StudentService(StudentContext studentContext)
         {
             _studentContext = studentContext;
             Students = GetStudents();
+            // Remove initialization of Students here
         }
         public IList<Student> GetStudents()
         {
@@ -22,8 +23,10 @@ namespace ASM2_AdvPrm_SIMS.Service
             if (_studentContext.Students != null)
             {
                 _studentContext.AddStudent(student);
+                Students.Add(student); // Add the new student to the Students collection
             }
         }
+
         public void RemoveStudent(int id)
         {
             var teacher = _studentContext.Students.Find(t => t.Id == id);
@@ -38,10 +41,6 @@ namespace ASM2_AdvPrm_SIMS.Service
             {
                 _studentContext.UpdateStudent(id, student);
             }
-        }
-        public int CountStudentsInCsv()
-        {
-            return _studentContext.CountStudentsInCsv();
         }
     }
 }

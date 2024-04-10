@@ -5,11 +5,9 @@
     ViewData["Title"] = "Dashboard";
     var filePath = "ASM2_AdvPrm_SIMS/CSV-Files/Student.csv"; // Update with correct file path
     var studentContext = new StudentContext(filePath);
-    int numberOfStudents = studentContext.CountStudentsInCsv();
 
     // Debugging statements
     Console.WriteLine($"File Path: {filePath}");
-    Console.WriteLine($"Number of Students: {numberOfStudents}");
 }
 
 

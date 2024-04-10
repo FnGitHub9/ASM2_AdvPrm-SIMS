@@ -19,6 +19,12 @@ namespace ASM2_AdvPrm_SIMS.Context
             this.filePath = filePath;
             Students = ReadDataFromCsvAndUpdateId(filePath);
         }
+        // Add a constructor allowing in-memory setup
+        public StudentContext(List<Student> students)
+        {
+            Students = students;
+        }
+
         public void AddStudent(Student student)
         {
             student.Id = nextStudentId++;
@@ -56,28 +62,6 @@ namespace ASM2_AdvPrm_SIMS.Context
             {
                 Console.WriteLine($"Student with ID {studentID} not found.");
             }
-        }
-        public int CountStudentsInCsv()
-        {
-            int studentCount = 0;
-            if (File.Exists(filePath))
-            {
-                using (StreamReader sr = new StreamReader(filePath))
-                {
-                    sr.ReadLine();
-                    while (!sr.EndOfStream)
-                    {
-                        sr.ReadLine() ;
-                        studentCount++;
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine("Unable to read csv");
-            }
-
-            return studentCount;
         }
         public List<Student> ReadDataFromCsvAndUpdateId(string filePath)
         {
@@ -119,6 +103,12 @@ namespace ASM2_AdvPrm_SIMS.Context
         }
         private void WriteDataToCsv(string filePath)
         {
+            string directoryPath = Path.GetDirectoryName(filePath);
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
             using (StreamWriter writer = new StreamWriter(filePath))
             {
                 writer.WriteLine("Id,firstName,lastName,Status,Birthdate");
@@ -129,6 +119,5 @@ namespace ASM2_AdvPrm_SIMS.Context
                 }
             }
         }
-
     }
 }
